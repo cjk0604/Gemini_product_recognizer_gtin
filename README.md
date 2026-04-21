@@ -1,7 +1,8 @@
 # Product Recognizer GTIN using Gemini
 
-GTIN(Global Trade Item Number) 기반 상품 인식 시스템으로, 매장 선반 이미지에서 상품을 식별하여 카탈로그의 정확한 상품과 매칭합니다.
-Vector DB(유사 이미지 검색)와 Gemini LLM(리랭킹)을 결합한 2단계 Retrieve & Rerank 파이프라인으로 구성됩니다.
+A GTIN (Global Trade Item Number)-based product recognition system that identifies products from store shelf images and matches them to the exact product in a catalog.
+
+Since [Vision AI Product Recognizer](https://docs.cloud.google.com/vision-ai/docs/product-recognizer) is being deprecated, this project uses [Multi-Modal Embedding](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/multimodal-embeddings-api) and VectorDB to perform product image search, and uses Gemini for picking the right candidate after search. The overall diagram is shown in the architecture below.
 
 ## Architecture
 
