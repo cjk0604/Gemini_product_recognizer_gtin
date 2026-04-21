@@ -2,6 +2,16 @@
 
 **[한국어 버전 (Korean)](README_ko.md)**
 
+<a href="https://colab.research.google.com/github/cjk0604/Gemini_product_recognizer_gtin/blob/main/product_recognizer_gtin_using_Gemini.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+</a>
+<a href="https://console.cloud.google.com/vertex-ai/colab/import/https:%2F%2Fraw.githubusercontent.com%2Fcjk0604%2FGemini_product_recognizer_gtin%2Fmain%2Fproduct_recognizer_gtin_using_Gemini.ipynb">
+  <img src="https://img.shields.io/badge/Colab_Enterprise-Open-blue?logo=google-cloud" alt="Open In Colab Enterprise">
+</a>
+<a href="https://github.com/cjk0604/Gemini_product_recognizer_gtin/blob/main/product_recognizer_gtin_using_Gemini.ipynb">
+  <img src="https://img.shields.io/badge/GitHub-View_Source-black?logo=github" alt="View on GitHub">
+</a>
+
 A GTIN (Global Trade Item Number)-based product recognition system that identifies products from store shelf images and matches them to the exact product in a catalog.
 
 Since [Vision AI Product Recognizer](https://docs.cloud.google.com/vision-ai/docs/product-recognizer) is being deprecated, this project uses [Multi-Modal Embedding](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/multimodal-embeddings-api) and VectorDB to perform product image search, and uses Gemini for picking the right candidate after search. The overall diagram is shown in the architecture below.
